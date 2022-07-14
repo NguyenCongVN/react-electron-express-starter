@@ -60,7 +60,7 @@
       [
         "@babel/preset-env",
         {
-          "modules": false
+          "modules": "auto"
         }
       ],
       "@babel/preset-react"

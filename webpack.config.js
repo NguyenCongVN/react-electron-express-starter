@@ -5,7 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     mode: 'development',
     entry: {
-        app: './app/index.js'
+        app: './app/index.jsx'
     },
     output: {
         filename: 'app.bundle.js',
@@ -36,5 +36,8 @@ module.exports = {
             ],
         })
     ],
-    devtool: 'eval'
+    devtool: 'eval',
+    resolve: {
+        extensions: ['.js', '.jsx'],
+    }
 };
